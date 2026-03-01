@@ -1,7 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-
 app = Flask(__name__)
-
 # Banco de Dados de 40 Perguntas
 perguntas = [
     # ANTIGO TESTAMENTO (10)
@@ -77,4 +75,4 @@ def verificar_resposta():
 
 # Importante para Vercel
 if __name__ == '__main__':
-    app.run()
+   app.run(debug=True)
