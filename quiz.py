@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 
 # CONFIGURAÇÃO ESSENCIAL PARA VERCEL: O objeto 'app' deve ser global e estar no topo.
-app = Flask(__name__)
+app=Flask(__name__)
 
 # BANCO DE DADOS: 40 Perguntas organizadas por categorias
 perguntas = [
